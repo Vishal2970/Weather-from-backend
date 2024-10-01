@@ -17,8 +17,6 @@ app.use(express.json());
 
 app.get("/weather", async (req, res) => {
   const city = req.query.city;
-  console.log(req.query);
-  
   const apiKey = "197d20caeee5c34731cb9d451e2a02b3";
   const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
