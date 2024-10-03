@@ -4,10 +4,10 @@ const axios = require("axios");
 const cors = require("cors");
 
 const app = express();
-const port = process.env.PORT;
+const port ="3001";
 const corsOptions = {
-  origin: process.env.origin,
-  method: process.env.method,
+  origin:"http://localhost:3000",
+  method: "GET,POST,PUT,DELETE,PATCH,HEAD",
   credentials: true,
 };
 app.use(cors(corsOptions));
@@ -16,7 +16,9 @@ app.use(express.json());
 
 app.get("/weather", async (req, res) => {
   const city = req.query.city;
-  const apiKey = process.env.apiKey;
+  console.log('city',city);
+  
+  const apiKey ="197d20caeee5c34731cb9d451e2a02b3";
   const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   try {
