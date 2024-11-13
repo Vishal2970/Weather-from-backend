@@ -12,7 +12,7 @@ function App() {
 
   const handleFetchWeather = async (event) => {
     event.preventDefault();
-    const url = `http://localhost:3001/weather?city=${city}`;
+    const url = `https://weather-from-backend.onrender.com/weather?city=${city}`;
     console.log(url);
 
     try {
