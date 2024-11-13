@@ -58,27 +58,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <div class="card">
-  <div class="card-header">
-    <h1>Weather App</h1>
-    <form onSubmit={handleFetchWeather}>
-        <input type="text" value={city} onChange={handleCityChange} placeholder="Enter city name" />
-        <button type="Submit" >Fetch Weather</button>
-      </form>
-  </div>
-  <div class="card-body">
-    {weather && (
-        <div>
-          <h2>Weather in {weather.name}</h2>
-          <p>Temperature: {weather.main.temp}°C</p>
-          <p>Feels like: {weather.main.feels_like}°C</p>
-          <p>Humidity: {weather.main.humidity}%</p>
-          <p>Wind Speed: {weather.wind.speed}Kmph</p>
-          <p>Weather: {weather.weather[0].description}</p>
-        </div>
-      )}
-  </div>
-</div> */
-}
